@@ -105,7 +105,7 @@ h2, p {
 
 .separator {
     width: 75%; height: 100%; border: 1px #D9F1F7 solid; 
-    margin-top: 5px;
+    margin-top: 25px;
     margin-bottom: 10px;
     margin-left: auto;
     margin-right: auto;
@@ -142,4 +142,42 @@ h2, p {
 
 #bottom_icons img:hover {
     fill: grey;
+}
+
+.left_info_license {
+    display:flex; align-content: center; height: 40px;
+}
+
+.left_info_license img {
+    margin-left: 10%; width:25px;
+}
+
+.left_info_license p {
+    font-size: 16px;
+    font-weight: 400;
+    word-wrap: break-word;
+    align-self: center;
+    text-decoration: none;
+}
+
+#right_col h1 {
+    font-size: 40px;
+    font-weight: 400;
+    color: #13ACB6;
+}
+
+#right_col h2 {
+    color: #303030;
+    font-size: 24px;
+    font-family: Roboto;
+    font-weight: 700;
+}
+
+.right_entry {
+    margin-left: 37px;
+    display:flex; align-content: center;
+}
+
+.right_entry img {
+    width: 62px;
 }
