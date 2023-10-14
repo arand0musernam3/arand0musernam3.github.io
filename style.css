@@ -49,10 +49,27 @@ h2, p {
     text-decoration: none;
 }
 
-.top_info {
+.left_info {
     display:flex; align-content: center; height: 47px;
 }
 
 .top_image {
     width: 100%; max-width: 457px; max-height: 457px; height: 0; padding-bottom: 100%;
+}
+
+.small_title {
+    color: #13ACB6;
+    font-size: 24px;
+    font-weight: 700;
+    word-wrap: break-word;
+    align-self: center;
+    text-decoration: none;
+}
+
+.separator {
+    width: 75%; height: 100%; border: 1px #D9F1F7 solid; 
+    margin-top: 5px;
+    margin-bottom: 10px;
+    margin-left: auto;
+    margin-right: auto;
 }
