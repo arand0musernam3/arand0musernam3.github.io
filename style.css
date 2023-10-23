@@ -51,6 +51,7 @@ h2, p, li {
     border-radius: 5px;
     overflow: hidden;
     margin-top: 15px;
+    flex-grow: 1;
 }
 
 #name {
@@ -184,6 +185,10 @@ h2, p, li {
 
 #right_col {
     background: white; width: 66vw; max-width: 938px; min-width: 400px;
+}
+
+#col_esquerra {
+    display: flex;flex-direction: column;
 }
 
 #right_col h1 {
