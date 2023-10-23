@@ -43,6 +43,10 @@ h2, p, li {
     color: #303030;
 }
 
+#no_grow {
+    flex-grow: 0;
+}
+
 .caixa {
     background: white;
     display: flex;
