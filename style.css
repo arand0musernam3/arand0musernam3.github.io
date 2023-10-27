@@ -39,8 +39,9 @@ ul li::before {
     margin-left: -1em; /* Also needed for space (tweak if needed) */
 }
 
-h2, p, li {
+h2, p, li, a {
     color: #303030;
+    text-decoration: none;
 }
 
 #no_grow {
@@ -191,7 +192,7 @@ h2, p, li {
     background: white; width: 66vw; max-width: 938px; min-width: 400px;
 }
 
-#col_esquerra {
+#left_col {
     display: flex;flex-direction: column;
 }
 
@@ -295,4 +296,8 @@ bold {
 
 .li_within_paragraph {
     margin-left: 20px; margin-right: 17px;
+}
+
+.end {
+    padding-bottom: 17px;
 }
