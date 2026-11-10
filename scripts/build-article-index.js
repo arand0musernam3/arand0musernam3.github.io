@@ -1,7 +1,7 @@
 import fs from "fs";
 import path from "path";
 import crypto from "crypto";
-import yaml from "js-yaml";
+import * as yaml from "js-yaml";
 import { ensureDirExists } from "./utils.js";
 
 const articlesDir = path.join(process.cwd(), "public", "articles");

@@ -1,6 +1,6 @@
 import fs from "fs";
 import path from "path";
-import yaml from "js-yaml";
+import * as yaml from "js-yaml";
 import { ensureDirExists } from "./utils.js";
 
 // load environment variables from .env if not in github CI
