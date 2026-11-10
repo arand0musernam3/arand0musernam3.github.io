@@ -1,0 +1,1 @@
+import{i as e,s as t,t as n}from"./site-BUk6OfT9.js";var r=t(e(),1);function i(e){(0,r.useEffect)(()=>{document.title=`${e} - ${n.name}`},[e])}export{i as t};
