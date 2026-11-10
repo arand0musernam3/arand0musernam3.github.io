@@ -51,7 +51,7 @@ export default function Article() {
           setContent(content);
         } catch (e) {
           console.error("Frontmatter parse error:", e);
-          throw new Error("PARSE_ERROR");
+          throw new Error("PARSE_ERROR", { cause: e });
         }
       } catch (err) {
         console.error(err);
