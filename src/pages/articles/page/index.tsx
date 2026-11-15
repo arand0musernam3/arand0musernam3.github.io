@@ -44,8 +44,18 @@ export default function Article() {
         )
           throw new Error("NOT_FOUND");
 
+        let parsed: ReturnType<typeof parseFrontmatter>;
         try {
-          const { attributes, body } = parseFrontmatter(rawContent);
+          parsed = parseFrontmatter(rawContent);
+        } catch (e) {
+          console.error("Frontmatter parse error:", e);
+          throw new Error("PARSE_ERROR", { cause: e });
+        }
+        // drafts are hidden from the list, so don't render them by direct URL either
+        if (parsed.attributes.draft === true) throw new Error("NOT_FOUND");
+
+        try {
+          const { attributes, body } = parsed;
           const content = resolveRelativePaths(body, slug);
           setMetadata(attributes);
           setContent(content);

@@ -35,16 +35,42 @@ function loadProjectsFromYaml() {
 
   const items = data?.projects?.items ?? [];
 
-  const keepIds = new Set(items.map((item) => item.id).filter(Boolean));
+  // `github: false` marks a project with no public repository (e.g. a course
+  // project): it's built from the YAML alone instead of the GitHub API.
+  const repoItems = items.filter((item) => item.id && item.github !== false);
+  const manualItems = items.filter((item) => item.id && item.github === false);
+
+  const keepIds = new Set(repoItems.map((item) => item.id));
 
   const projectsDict = {};
-  for (const item of items) {
-    if (!item.id) continue;
+  for (const item of repoItems) {
     const { id, ...rest } = item;
     projectsDict[id] = rest;
   }
 
-  return { keepIds, projectsDict };
+  return { keepIds, projectsDict, manualItems };
+}
+
+// Same shape as a GitHub-backed entry, so the project pages need no changes:
+// no html_url (no repo link) and no stargazers_count (no star badge).
+function manualProject(item) {
+  const date = String(item.date ?? "1970-01");
+  const timestamp = new Date(date.length === 7 ? `${date}-01` : date).toISOString();
+  return {
+    name: item.id,
+    description: item.description ?? null,
+    stargazers_count: null,
+    topics: item.topics ?? [],
+    language: item.language ?? null,
+    homepage: item.link ?? null,
+    html_url: null,
+    created_at: timestamp,
+    updated_at: timestamp,
+    pushed_at: timestamp,
+    displayName: item.displayName ?? item.id,
+    previewImage: item.previewImage ?? null,
+    featured: item.featured ?? false,
+  };
 }
 
 async function fetchAllRepos() {
@@ -83,18 +109,15 @@ async function fetchAllRepos() {
 async function fetchRepos() {
   try {
     const data = await fetchAllRepos();
-    const { keepIds, projectsDict } = loadProjectsFromYaml();
+    const { keepIds, projectsDict, manualItems } = loadProjectsFromYaml();
 
-    const merged = {};
+    const entries = [];
 
+    // Forks are included too, but only when listed explicitly in projects.yaml.
     data
-      .filter((repo) => !repo.fork && !repo.private && keepIds.has(repo.name))
-      .sort(
-        (a, b) =>
-          new Date(b.created_at).getTime() - new Date(a.created_at).getTime(),
-      )
+      .filter((repo) => !repo.private && keepIds.has(repo.name))
       .forEach((repo) => {
-        merged[repo.name] = {
+        entries.push({
           name: repo.name,
           description: repo.description,
           stargazers_count: repo.stargazers_count,
@@ -106,8 +129,21 @@ async function fetchRepos() {
           updated_at: repo.updated_at,
           pushed_at: repo.pushed_at,
           ...projectsDict[repo.name],
-        };
+        });
       });
+
+    const missing = [...keepIds].filter((id) => !entries.some((e) => e.name === id));
+    if (missing.length)
+      console.warn(`⚠️ Not found as public repos, skipped: ${missing.join(", ")}`);
+
+    entries.push(...manualItems.map(manualProject));
+
+    // newest first
+    entries.sort(
+      (a, b) =>
+        new Date(b.created_at).getTime() - new Date(a.created_at).getTime(),
+    );
+    const merged = Object.fromEntries(entries.map((e) => [e.name, e]));
 
     ensureDirExists(outputPath);
     fs.writeFileSync(outputPath, JSON.stringify(merged, null, 2));

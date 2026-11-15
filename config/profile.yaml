@@ -12,225 +12,265 @@
 # =====================================================
 
 profile:
-  name: "[Your Name]"
-  headline: "Student @ [Your University]"
-  email: "your-email@gmail.com"
-  location: null
-  profileImage: "https://github.com/pm25.png"
+  name: "Aniol Juanola Vilalta"
+  headline: "Cybersecurity Researcher"
+  email: "anjuanolavil@gmx.com"
+  location: "Aarhus, Denmark"
+  profileImage: "https://github.com/arand0musernam3.png"
 
   links:
     - name: "LinkedIn"
-      url: "https://www.linkedin.com/in/[your-linkedin]"
+      url: "https://www.linkedin.com/in/ajuanola"
       icon:
         name: "FaLinkedin"
         package: "react-icons/fa6"
 
-    - name: "Google Scholar"
-      url: "https://scholar.google.com/citations?user=[your-id]"
-      icon:
-        name: "FaGoogleScholar"
-        package: "react-icons/fa6"
-
-    - name: "Résumé"
-      url: "/pdf/sample-resume.pdf"
-      icon:
-        name: "FaRegIdBadge"
-        package: "react-icons/fa6"
-
     - name: "Github"
-      url: "https://github.com/[your-github]"
+      url: "https://github.com/arand0musernam3"
       icon:
         name: "FaGithub"
         package: "react-icons/fa6"
 
-    - name: "Facebook"
-      url: "https://www.facebook.com/[your-facebook]"
+    # rendered from ../cv/cv.typ — the "CV: build PDF" VS Code task refreshes it
+    - name: "CV (PDF)"
+      url: "/pdf/Aniol_Juanola_Vilalta_CV.pdf"
       icon:
-        name: "FaSquareFacebook"
-        package: "react-icons/fa6"
+        name: "TbFileCvFilled"
+        package: "react-icons/tb"
 
   # you can use HTML syntax here (e.g. <br/>, <a>, <strong>, ...)
   biography: |
-    Hi! I'm <strong>[Your Name]</strong>, a <em>[Your Title]</em> passionate about <em>[field or topic]</em>. Currently, I work as <em>[current role]</em> at <em>[organization]</em>, where I <em>[briefly describe your work or mission]</em>. 
-    With a background in <em>[academic or professional background]</em>, I've developed strong interests in <em>[key interests or specialties]</em> and have contributed to projects like <i>[example project]</i> and <i>[another example]</i>, all focused on <em>[broader goal or impact]</em>.
+    Hi! I'm <strong>Aniol Juanola Vilalta</strong>, a <em>cybersecurity researcher</em> passionate about <em>cryptography</em>, <em>secure system design</em> and <em>algorithms</em>. I'm currently pursuing an <em>M.S. in Computer Science</em> at <em>Aarhus University</em>, working on multi-party computation and post-quantum cryptography with a thesis in preparation on <em>threshold signing for ML-DSA</em> (FIPS 204). Alongside, I work as an <em>R&amp;D Engineer</em> at <em>Delsys Seidor</em>, where I own access control, identity, logging and vulnerability management for the company's compliance with Spain's National Security Framework (ENS), and lead threat modeling for a new product. I'm looking for a <em>PhD in applied cryptography</em>, in areas such as secure computation, post-quantum cryptography and hardware security.
     <div class="my-2"></div>
-    Outside of work, I enjoy <em>[hobbies or personal interests]</em>, which inspire creativity and keep me energized. Thanks for visiting! Feel free to <a href="mailto:[your-email@example.com]" target="_blank" rel="noopener noreferrer">reach out</a> to connect.
+    Before that, I studied <em>Computer Engineering</em> at the <em>University of Girona</em>, graduating with honours at the top of my class (GPA 9.23/10). There I did research at the Graphics &amp; Imaging Laboratory on <i>Starviewer</i>, bringing the radiology viewer to the browser with WebAssembly and training an nnU-Net model to segment spine MRI scans.
+    <div class="my-2"></div>
+    Outside of work, I'm an SSI-certified <em>SCUBA Divemaster</em>, a climber, cyclist and overall nature lover. I also tutor high school students on maths, physics and English. Thanks for visiting! Feel free to <a href="mailto:anjuanolavil@gmx.com" target="_blank" rel="noopener noreferrer">reach out</a> to connect.
 
 # # =====================================================
 # # 🎓 Education Section
+# # Optional `logoDark`: a variant shown in dark mode (for dark logos).
 # # =====================================================
 
 education:
-  - degree: "Ph.D. in [Field]"
-    school: "[University Name]"
-    years: "20XX - Present"
-    logo: "https://upload.wikimedia.org/wikipedia/en/a/a1/Arizona_State_University_seal.svg"
-
   - degree: "M.S. in Computer Science"
-    school: "National Taiwan University"
-    years: "2020 - 2022"
-    logo: "/images/ntu_logo.svg"
+    school: "Aarhus University"
+    years: "2025 - Present"
+    logo: "/images/aarhus-university.png"
+    logoDark: "/images/aarhus-university-dark.png"
 
-  - degree: "B.S. in Computer Science"
-    school: "National Chengchi University"
-    years: "2018 - 2020"
-    logo: "/images/nccu_logo.svg"
+  - degree: "B.S. in Computer Engineering"
+    school: "University of Girona"
+    years: "2021 - 2025"
+    logo: "/images/udg.png"
+    logoDark: "/images/udg-dark.png"
 
 # # =====================================================
 # # 💼 Work Experience Section
 # # =====================================================
 
 workExperience:
-  - title: "[Job Title]"
-    company: "[Company Name]"
-    years: "20XX - Present"
-    logo: "/images/nvidia_logo.webp"
+  - title: "R&D Engineer"
+    company: "Delsys Seidor"
+    years: "2025 - Present"
+    logo: "/images/delsys.png"
+    logoDark: "/images/delsys-dark.png"
 
-  - title: "Software Engineering Intern"
-    company: "Google"
-    years: "Jul 2022 - Sep 2022"
-    logo: "/images/google_logo.svg"
+  - title: "Student Researcher"
+    company: "Graphics & Imaging Laboratory (University of Girona)"
+    years: "2024 - 2025"
+    logo: "/images/gilab.png"
 
-  - title: "Research Assistant"
-    company: "University of Illinois Urbana-Champaign"
-    years: "Jul 2019 - Sep 2019"
-    logo: "/images/uiuc_logo.png"
+  - title: "Advanced Support Technician"
+    company: "Girona Fibra S.L. (Fibracat Telecom S.L.U.)"
+    years: "2022 - 2024"
+    logo: "/images/gironafibra.png"
+
+  - title: "Private Tutor"
+    company: "Freelance"
+    years: "2021 - Present"
+    logo: "https://upload.wikimedia.org/wikipedia/commons/2/2a/OOjs_UI_icon_academic-progressive.svg"
 
 # # =====================================================
 # # 🎤 Presentations / Talks Section
 # # =====================================================
 
-talks:
-  - category: "Misc"
-    title: "[Your Talk Title Here]"
-    organization: "[Your Talk Location Here]"
-    date: "[Month Day, Year]"
-    link: "https://example.com/your-talk-link"
-    image: "https://upload.wikimedia.org/wikipedia/commons/8/8f/Example_image.svg"
-
-  - category: "Workshop"
-    title: "Deep Learning with Keras"
-    organization: "University of Illinois Urbana-Champaign (UIUC)"
-    date: "Sep 4, 2019"
-    link: null
-    image: "https://pm25.github.io/images/uiuc-workshop.webp"
-
-  - category: "Workshop"
-    title: "Practical Guide to PyTorch"
-    organization: "ABC University"
-    date: "Dec 5, 2022"
-    link: "https://example.com/workshop-talk"
-    image: null
+talks: []
 
 # # =====================================================
 # # 🛡️ Professional Services
 # # =====================================================
 
-services:
-  - category: "Misc"
-    role: "[Role]"
-    organization: "[Organization]"
-    date: "[Year]"
-    link: "https://example.com/workshop-talk"
-    image: "https://upload.wikimedia.org/wikipedia/commons/8/8f/Example_image.svg"
-
-  - category: "Research"
-    role: "Reviewer"
-    organization: "TPAMI 2024, NeurIPS 2025"
-    date: "2024-2025"
-    link: null
-    image: null
-
-  - category: "Research"
-    role: "Program Committee Member"
-    organization: "CVPR 2022"
-    date: "2022"
-    link: null
-    image: null
-
-  - category: "Teaching"
-    role: "Teaching Assistant"
-    organization: "National Taiwan University - Data Structures & Algorithms"
-    date: "2021"
-    link: null
-    image: null
+services: []
 
 # # =====================================================
 # # 🛠️ Skills Section
+# # Keep in sync with the SKILLS section of the CV (../cv/cv.typ).
 # # =====================================================
 
 skills:
+  Offensive Security:
+    - name: "Android App Pentesting"
+      logo: "https://cdn.simpleicons.org/android"
+      proficiency: null
+      description: "Threat model, static, dynamic, network, authentication and privacy analysis of a production Android app."
+
+    - name: "Reverse Engineering"
+      logo: null
+      proficiency: null
+      description: "APK decompilation, smali patching and repackaging (jadx, apktool), and runtime hooks with Frida."
+
+    - name: "TLS Interception"
+      logo: null
+      proficiency: null
+      description: "Man-in-the-middle of an app's HTTPS traffic with mitmproxy and a system-trusted CA."
+
+    - name: "Network Attacks"
+      logo: null
+      proficiency: null
+      description: "TCP injection and session hijacking with Scapy."
+
+  Defensive Security:
+    - name: "Threat Modeling"
+      logo: null
+      proficiency: null
+      description: "STRIDE and adversary-driven models; leading threat modeling and the security-model implementation for a new OEE product at Delsys Seidor."
+
+    - name: "IAM"
+      logo: null
+      proficiency: null
+      description: "Designed a team-based access-control model for GitHub Enterprise Cloud, with SSO via Entra ID."
+
+    - name: "Vulnerability Management"
+      logo: null
+      proficiency: null
+      description: null
+
+    - name: "ENS & GDPR Compliance"
+      logo: null
+      proficiency: null
+      description: "Owning access control, identity, logging and vulnerability management for Spain's National Security Framework (ENS, RD 311/2022) at MEDIUM/HIGH category; GDPR consent and tracker reviews."
+
+  Cryptography:
+    - name: "Classical & Post-Quantum Cryptography"
+      logo: null
+      proficiency: null
+      description: "Symmetric and public-key cryptography (RSA, discrete log), lattice-based encryption (LWE) and ML-DSA."
+
+    - name: "Zero-Knowledge & Succinct Proofs"
+      logo: null
+      proficiency: null
+      description: "Σ-protocols, interactive proofs, sumcheck, GKR and PCPs."
+
+    - name: "Secure Multiparty Computation"
+      logo: null
+      proficiency: null
+      description: "Oblivious transfer, garbled circuits and fully homomorphic encryption, implemented in Go."
+
+    - name: "Threshold Signatures"
+      logo: null
+      proficiency: null
+      description: "Master's thesis in preparation on threshold signing for ML-DSA (FIPS 204)."
+
+    - name: "Blockchain"
+      logo: null
+      proficiency: null
+      description: null
+
+  Formal Methods:
+    - name: "Information-Flow Control"
+      logo: null
+      proficiency: null
+      description: "Security type systems and runtime monitors, implemented in Haskell."
+
+    - name: "Program Verification in Rocq"
+      logo: null
+      proficiency: null
+      description: "Program equivalence and Hoare logic, proved sound and complete in the Rocq proof assistant."
+
   Programming:
-    - name: "[Name]"
-      logo: "https://upload.wikimedia.org/wikipedia/commons/1/18/ISO_C%2B%2B_Logo.svg"
-      proficiency: "[Proficiency]"
-      description: "[Description]"
-
     - name: "Python"
-      logo: "https://upload.wikimedia.org/wikipedia/commons/c/c3/Python-logo-notext.svg"
-      proficiency: Experienced
+      logo: "https://cdn.simpleicons.org/python"
+      proficiency: null
       description: null
 
-    - name: "JavaScript"
-      logo: "https://upload.wikimedia.org/wikipedia/commons/9/99/Unofficial_JavaScript_logo_2.svg"
-      proficiency: Fluent
+    - name: "Go"
+      logo: "https://cdn.simpleicons.org/go"
+      proficiency: null
       description: null
 
-  Web:
-    - name: "React"
-      logo: "https://upload.wikimedia.org/wikipedia/commons/3/30/React_Logo_SVG.svg"
-      proficiency: Advanced
+    - name: "Haskell"
+      logo: "https://cdn.simpleicons.org/haskell"
+      proficiency: null
       description: null
 
-    - name: "Typescript"
-      logo: "https://upload.wikimedia.org/wikipedia/commons/f/f5/Typescript.svg"
-      proficiency: Fluent
+    - name: "Rocq"
+      logo: null
+      proficiency: null
       description: null
 
-    - name: "TailwindCSS"
-      logo: "https://upload.wikimedia.org/wikipedia/commons/d/d5/Tailwind_CSS_Logo.svg"
-      proficiency: Fluent
+    - name: "Java"
+      logo: "https://cdn.simpleicons.org/openjdk/888888"
+      proficiency: null
       description: null
 
-    - name: "Next.js"
-      logo: "https://logo.svgcdn.com/devicon/nextjs-original.png"
-      proficiency: Fluent
+    - name: "C++"
+      logo: "https://upload.wikimedia.org/wikipedia/commons/1/18/ISO_C%2B%2B_Logo.svg"
+      proficiency: null
       description: null
 
-  Machine Learning:
-    - name: "PyTorch"
-      logo: "https://upload.wikimedia.org/wikipedia/commons/1/10/PyTorch_logo_icon.svg"
-      proficiency: Experienced
+    - name: "C# / .NET"
+      logo: "https://upload.wikimedia.org/wikipedia/commons/7/7d/Microsoft_.NET_logo.svg"
+      proficiency: null
       description: null
 
-    - name: "TensorFlow"
-      logo: "https://upload.wikimedia.org/wikipedia/commons/2/2d/Tensorflow_logo.svg"
-      proficiency: Fluent
+  Infrastructure:
+    - name: "Entra ID"
+      logo: null
+      proficiency: null
+      description: "Single sign-on for the company's GitHub Enterprise Cloud organization."
+
+    - name: "GitHub Enterprise Cloud"
+      logo: "https://cdn.simpleicons.org/github/888888"
+      proficiency: null
+      description: "Migrated the company's repositories from GitLab to GitHub Enterprise Cloud."
+
+    - name: "Docker"
+      logo: "https://cdn.simpleicons.org/docker"
+      proficiency: null
+      description: "Containerizing existing infrastructure for horizontal scaling and reproducible deployments."
+
+    - name: "MikroTik"
+      logo: "https://cdn.simpleicons.org/mikrotik/888888"
+      proficiency: null
       description: null
 
-    - name: "Keras"
-      logo: "https://upload.wikimedia.org/wikipedia/commons/a/ae/Keras_logo.svg"
-      proficiency: Fluent
+    - name: "FreePBX"
+      logo: null
+      proficiency: null
       description: null
-
-  Research:
-    - name: "Machine Learning"
-      logo: "https://upload.wikimedia.org/wikipedia/commons/2/2a/OOjs_UI_icon_academic-progressive.svg"
-      proficiency: 2020 - Current
-      description: "General machine learning methods and applied research."
-
-    - name: "Representation Learning"
-      logo: "https://upload.wikimedia.org/wikipedia/commons/2/2a/OOjs_UI_icon_academic-progressive.svg"
-      proficiency: 2024 - 2025
-      description: "Learning meaningful embeddings and feature representations from data."
 
   Language:
-    - name: "English"
-      logo: "https://upload.wikimedia.org/wikipedia/commons/e/e0/OOjs_UI_icon_language-ltr-progressive.svg"
-      proficiency: Fluent
-      description: "Professional working proficiency."
-
-    - name: "Taiwanese Hokkien"
+    - name: "Catalan"
       logo: "https://upload.wikimedia.org/wikipedia/commons/e/e0/OOjs_UI_icon_language-ltr-progressive.svg"
       proficiency: Native
-      description: "Native fluency."
+      description: null
+
+    - name: "Spanish"
+      logo: "https://upload.wikimedia.org/wikipedia/commons/e/e0/OOjs_UI_icon_language-ltr-progressive.svg"
+      proficiency: Native
+      description: null
+
+    - name: "English"
+      logo: "https://upload.wikimedia.org/wikipedia/commons/e/e0/OOjs_UI_icon_language-ltr-progressive.svg"
+      proficiency: "C2"
+      description: "Full professional proficiency."
+
+    - name: "French"
+      logo: "https://upload.wikimedia.org/wikipedia/commons/e/e0/OOjs_UI_icon_language-ltr-progressive.svg"
+      proficiency: "B1"
+      description: "Intermediate."
+
+    - name: "Danish"
+      logo: "https://upload.wikimedia.org/wikipedia/commons/e/e0/OOjs_UI_icon_language-ltr-progressive.svg"
+      proficiency: "A2"
+      description: "Elementary."

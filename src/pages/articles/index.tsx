@@ -17,8 +17,12 @@ import ArticlesData from "@/data/generated/articles.json";
 const validSorts = ["updated", "created"] as const;
 type SortByType = (typeof validSorts)[number];
 
+const publishedArticles = Object.values(ArticlesData).filter(
+  (article) => article.draft !== true,
+);
+
 const allTags = Array.from(
-  new Set(Object.values(ArticlesData).flatMap((article) => article.tags ?? [])),
+  new Set(publishedArticles.flatMap((article) => article.tags ?? [])),
 ).sort();
 
 export default function ArticlesPage() {
@@ -81,12 +85,20 @@ export default function ArticlesPage() {
           Articles
         </div>
 
-        <div className="flex justify-between flex-wrap gap-2 items-center mx-2 sm:mx-6 my-1 relative -top-2">
-          <TagFilter tagFilter={tagFilter} setTagFilter={updateTagFilter} />
-          <SortSelector sortBy={sortBy} setSortBy={updateSortBy} />
-        </div>
+        {publishedArticles.length === 0 ? (
+          <Card className="rounded-md mx-2 sm:mx-6 p-8 text-center text-muted-foreground">
+            I haven't published any articles yet. Check back soon!
+          </Card>
+        ) : (
+          <>
+            <div className="flex justify-between flex-wrap gap-2 items-center mx-2 sm:mx-6 my-1 relative -top-2">
+              <TagFilter tagFilter={tagFilter} setTagFilter={updateTagFilter} />
+              <SortSelector sortBy={sortBy} setSortBy={updateSortBy} />
+            </div>
 
-        <Separator />
+            <Separator />
+          </>
+        )}
 
         <div className="grid grid-cols-1 w-full gap-4 px-2 sm:px-6">
           {filteredArticles.map((articleName) => (

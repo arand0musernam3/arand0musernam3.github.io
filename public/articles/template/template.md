@@ -2,7 +2,7 @@
 title: "[Your Article Title]"
 summary: "A one-sentence summary of the post for previews or meta description."
 tags: ["tag1", "tag2"] # optional
-draft: false # optional — set to true to hide unfinished posts
+draft: true # optional — set to true to hide unfinished posts (this sample stays hidden; copy it to start a new article)
 ---
 
 # Your Article Title

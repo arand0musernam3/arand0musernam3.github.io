@@ -1,0 +1,18 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 600 400" font-family="ui-monospace, 'SF Mono', Menlo, Consolas, 'DejaVu Sans Mono', monospace">
+  <rect width="600" height="400" fill="#0b1220"/>
+  <rect width="600" height="30" fill="#131c2f"/>
+  <circle cx="18" cy="15" r="5.5" fill="#ff5f57"/><circle cx="36" cy="15" r="5.5" fill="#febc2e"/><circle cx="54" cy="15" r="5.5" fill="#28c840"/>
+  <text x="300.0" y="19.5" font-size="12" text-anchor="middle" fill="#5f6f8a">imp-vsi-flow-security — zsh</text>
+<text x="560" y="364" font-size="230" text-anchor="end" fill="#1d2a44" opacity="0.8">λ</text>
+<text x="22" y="58" font-size="13" xml:space="preserve" fill="#c9d4e5"><tspan fill="#7ee787">~$ </tspan>cat leak.imp</text>
+<text x="40" y="78" font-size="13" xml:space="preserve" fill="#c9d4e5"><tspan fill="#ff7b72">secret</tspan> := read_pin();       <tspan fill="#5f6f8a">// high</tspan></text>
+<text x="40" y="98" font-size="13" xml:space="preserve" fill="#c9d4e5"><tspan fill="#79b8ff">if </tspan><tspan fill="#ff7b72">secret</tspan> &gt; 0 <tspan fill="#79b8ff">then</tspan></text>
+<text x="40" y="118" font-size="13" xml:space="preserve" fill="#c9d4e5"><tspan fill="#79b8ff">  out</tspan> := 1                  <tspan fill="#5f6f8a">// low</tspan></text>
+<text x="22" y="148.0" font-size="13" xml:space="preserve" fill="#c9d4e5"><tspan fill="#7ee787">~$ </tspan>ifc --static leak.imp</text>
+<text x="22" y="168.0" font-size="13" xml:space="preserve" fill="#c9d4e5">leak.imp:3:3: <tspan fill="#ff7b72">error:</tspan> implicit flow</text>
+<text x="22" y="188.0" font-size="13" xml:space="preserve" fill="#c9d4e5">  high context <tspan fill="#ff7b72">⋢</tspan> low variable <tspan fill="#79b8ff">out</tspan></text>
+<text x="22" y="218" font-size="13" xml:space="preserve" fill="#c9d4e5"><tspan fill="#7ee787">~$ </tspan>ifc --dynamic leak.imp</text>
+<text x="22" y="238" font-size="13" xml:space="preserve" fill="#c9d4e5"><tspan fill="#e3b341">[monitor] </tspan>halted: low write under high pc</text>
+<text x="22" y="268.0" font-size="13" xml:space="preserve" fill="#c9d4e5"><tspan fill="#7ee787">✓ </tspan><tspan fill="#7ee787">noninterference enforced, both ways</tspan></text>
+<text x="22" y="298" font-size="13" xml:space="preserve" fill="#c9d4e5"><tspan fill="#7ee787">~$ </tspan><tspan fill="#c9d4e5">█</tspan></text>
+</svg>

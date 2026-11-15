@@ -193,7 +193,7 @@ function ProjectCard({
     <Card className="rounded-md overflow-hidden gap-0 py-0 w-full">
       <div className="flex flex-col lg:flex-row">
         <a
-          href={html_url}
+          href={html_url ?? undefined}
           target="_blank"
           rel="noopener noreferrer"
           className="block"
@@ -209,10 +209,7 @@ function ProjectCard({
             ) : (
               <div className="flex flex-col items-center justify-center p-4 w-full h-full bg-muted">
                 <span className="text-lg font-semibold opacity-80 text-center">
-                  {name || "Unnamed Project"}
-                </span>
-                <span className="text-sm text-muted-foreground text-center">
-                  Image not available
+                  {displayName || name || "Unnamed Project"}
                 </span>
               </div>
             )}
@@ -265,7 +262,7 @@ function ProjectCard({
 
           <div className="flex flex-row items-center justify-between text-muted-foreground pt-2">
             <div className="flex items-center gap-2 text-sm">
-              <p>Language: {language || "Unknown"}</p>
+              {language && <p>Language: {language}</p>}
               {stargazers_count !== null && (
                 <a
                   href={`${html_url}/stargazers`}

@@ -66,7 +66,7 @@ function ProjectCard({
     <Card className="rounded-md overflow-hidden gap-0 py-0 w-full flex flex-col h-full">
       <div className="flex flex-col flex-grow">
         <a
-          href={repoData.html_url}
+          href={repoData.html_url ?? undefined}
           target="_blank"
           rel="noopener noreferrer"
           className="block"
@@ -83,10 +83,7 @@ function ProjectCard({
             ) : (
               <div className="flex flex-col items-center justify-center p-4 w-full h-full bg-muted">
                 <span className="text-lg font-semibold opacity-80 text-center">
-                  {repoData.name || "Unnamed Project"}
-                </span>
-                <span className="text-sm text-muted-foreground text-center">
-                  Image not available
+                  {repoData.displayName || repoData.name || "Unnamed Project"}
                 </span>
               </div>
             )}
@@ -136,9 +133,9 @@ function ProjectCard({
 
           <div className="flex flex-row items-center justify-between text-muted-foreground mt-auto pt-2">
             <div className="flex items-center gap-2">
-              <p className="text-sm">
-                Language: {repoData.language || "Unknown"}
-              </p>
+              {repoData.language && (
+                <p className="text-sm">Language: {repoData.language}</p>
+              )}
               {repoData.stargazers_count !== null && (
                 <a
                   href={`${repoData.html_url}/stargazers`}

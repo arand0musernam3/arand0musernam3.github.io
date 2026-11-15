@@ -6,6 +6,24 @@ import { Card, CardContent, CardHeader, CardTitle } from "@/components/ui/card";
 import { education } from "@/data/education";
 import { workExperience } from "@/data/workExperience";
 
+// Shows `logoDark` instead of `logo` in dark mode, when an entry provides one.
+// Logos sit in a fixed tile so wide wordmarks and square emblems line up.
+function Logo({ src, srcDark, alt }: { src: string; srcDark?: string; alt: string }) {
+  const img = "h-full w-full object-contain";
+  return (
+    <div className="flex h-14 w-20 shrink-0 items-center justify-center rounded-lg border bg-muted/40 p-2">
+      {srcDark ? (
+        <>
+          <img src={src} alt={alt} className={`${img} dark:hidden`} loading="lazy" />
+          <img src={srcDark} alt={alt} className={`${img} hidden dark:block`} loading="lazy" />
+        </>
+      ) : (
+        <img src={src} alt={alt} className={img} loading="lazy" />
+      )}
+    </div>
+  );
+}
+
 export default function ExperienceSection() {
   return (
     <div className="grid grid-cols-1 md:grid-cols-2 gap-4">
@@ -20,11 +38,10 @@ export default function ExperienceSection() {
           <CardContent className="space-y-4">
             {education.map((edu, index) => (
               <div key={index} className="flex items-center gap-4">
-                <img
+                <Logo
                   src={edu.logo}
+                  srcDark={"logoDark" in edu ? edu.logoDark : undefined}
                   alt={`${edu.school} logo`}
-                  className="w-12 h-12 object-contain rounded"
-                  loading="lazy"
                 />
                 <div>
                   <div className="font-semibold">{edu.school}</div>
@@ -50,11 +67,10 @@ export default function ExperienceSection() {
           <CardContent className="space-y-4">
             {workExperience.map((job, index) => (
               <div key={index} className="flex items-center gap-4">
-                <img
+                <Logo
                   src={job.logo}
+                  srcDark={"logoDark" in job ? job.logoDark : undefined}
                   alt={`${job.company} logo`}
-                  className="w-12 h-12 object-contain rounded"
-                  loading="lazy"
                 />
                 <div>
                   <div className="font-semibold">{job.company}</div>

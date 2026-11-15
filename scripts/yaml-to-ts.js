@@ -7,6 +7,8 @@ import { ensureDirExists, addBasePathIfAbsolute } from "./utils.js";
 const TYPE_MAP = {
   publications: "PublicationsType",
   giscus: "GiscusProps",
+  talks: "TalksType",
+  services: "ServicesType",
 };
 
 const sitePath = path.join(

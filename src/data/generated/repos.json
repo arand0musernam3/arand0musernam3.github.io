@@ -1,135 +1,292 @@
 {
-  "example-project": {
-    "name": "example-project",
-    "description": "A sample repository used for demonstration purposes.",
+  "secure-computation-pq-signatures": {
+    "name": "secure-computation-pq-signatures",
+    "description": "Cryptographic Computing and Advanced Topics in Cybersecurity at Aarhus University: MPC protocols implemented in Go (oblivious transfer, fully homomorphic encryption, garbled circuits) for a private blood-type compatibility check, and an ongoing threshold-signatures and ML-DSA project.",
+    "stargazers_count": null,
+    "topics": [
+      "Master's",
+      "Cryptography",
+      "MPC",
+      "Post-quantum"
+    ],
+    "language": "Go",
+    "homepage": null,
+    "html_url": null,
+    "created_at": "2026-09-01T00:00:00.000Z",
+    "updated_at": "2026-09-01T00:00:00.000Z",
+    "pushed_at": "2026-09-01T00:00:00.000Z",
+    "displayName": "Secure Computation and Post-Quantum Signatures",
+    "previewImage": "/images/projects/secure-computation.svg",
+    "featured": true
+  },
+  "car-sharing-app-security-analysis": {
+    "name": "car-sharing-app-security-analysis",
+    "description": "Systems Security team project at Aarhus University: intercepted TLS on a rooted Android emulator with mitmproxy, decompiled and repackaged the APK, and hooked it at runtime with Frida. Found leaking and never-revoked session tokens, user enumeration, plaintext at-rest keys and trackers loaded before consent, each mapped to an adversary. The full report is available on request; feel free to reach out.",
+    "stargazers_count": null,
+    "topics": [
+      "Master's",
+      "Security",
+      "Mobile"
+    ],
+    "language": "Android",
+    "homepage": null,
+    "html_url": null,
+    "created_at": "2026-05-01T00:00:00.000Z",
+    "updated_at": "2026-05-01T00:00:00.000Z",
+    "pushed_at": "2026-05-01T00:00:00.000Z",
+    "displayName": "Security Analysis of a Car-Sharing Android App",
+    "previewImage": "/images/projects/car-sharing-audit.svg",
+    "featured": true
+  },
+  "imp-vsi-flow-security": {
+    "name": "imp-vsi-flow-security",
+    "description": "Language-Based Security project at Aarhus University: noninterference and erasure enforced on a simple imperative language, statically with a security type system and dynamically with runtime monitors.",
     "stargazers_count": 0,
-    "topics": ["example", "repository"],
-    "language": null,
-    "homepage": "",
-    "html_url": "https://github.com/pm25/example-project",
-    "created_at": "2025-11-25T01:10:00Z",
-    "updated_at": "2025-11-25T01:16:02Z",
-    "pushed_at": "2025-11-25T01:10:00Z",
-    "displayName": "[Project Name]",
-    "previewImage": "https://upload.wikimedia.org/wikipedia/commons/8/8f/Example_image.svg",
-    "featured": true
-  },
-  "showlit": {
-    "name": "showlit",
-    "description": "✨ Showlit - A modern and clean template for creating a personal website",
-    "stargazers_count": 5,
     "topics": [
-      "personal-website-template",
-      "react",
-      "shadcn-ui",
-      "tailwindcss",
-      "typescript",
-      "vite",
-      "website",
-      "website-template"
+      "Master's",
+      "Security",
+      "Formal methods"
     ],
-    "language": "TypeScript",
-    "homepage": "https://pm25.github.io/showlit/",
-    "html_url": "https://github.com/pm25/showlit",
-    "created_at": "2024-12-20T10:05:02Z",
-    "updated_at": "2025-11-26T02:22:47Z",
-    "pushed_at": "2025-11-27T05:48:16Z",
-    "displayName": "Showlit",
-    "previewImage": "https://pm25.github.io/showlit/images/full_logo.png",
-    "featured": true
-  },
-  "Semi-Supervised-Regression": {
-    "name": "Semi-Supervised-Regression",
-    "description": "🎋 NeurIPS 2024: Official repository for the paper 'RankUp: Boosting Semi-Supervised Regression with an Auxiliary Ranking Classifier'",
-    "stargazers_count": 14,
-    "topics": ["pytorch", "regression", "semi-supervised-learning"],
-    "language": "Python",
+    "language": "Haskell",
     "homepage": "",
-    "html_url": "https://github.com/pm25/Semi-Supervised-Regression",
-    "created_at": "2024-10-22T21:47:31Z",
-    "updated_at": "2025-11-17T08:49:19Z",
-    "pushed_at": "2025-08-22T01:38:11Z",
-    "displayName": "Semi-Supervised Regression",
-    "previewImage": "https://pm25.github.io/research-figures/rankup/figures/rankup-illustration.png",
+    "html_url": "https://github.com/arand0musernam3/imp-vsi-flow-security",
+    "created_at": "2026-04-19T11:12:09Z",
+    "updated_at": "2026-05-29T12:25:09Z",
+    "pushed_at": "2026-06-01T15:04:59Z",
+    "displayName": "Static vs Dynamic Information-Flow Control",
+    "previewImage": "/images/projects/ifc-code.svg",
     "featured": true
   },
-  "SimplePlus-BeamerTheme": {
-    "name": "SimplePlus-BeamerTheme",
-    "description": "🍃 SimplePlus - A minimalist and clean LaTeX Beamer theme",
-    "stargazers_count": 234,
+  "AUHack26": {
+    "name": "AUHack26",
+    "description": "Hackathon project at AUHack 2026: a multiplayer strategy game where grid operators bid for energy contracts and speculate on the weather.",
+    "stargazers_count": 1,
     "topics": [
-      "beamer-template",
-      "beamer-theme",
-      "latex",
-      "latex-template",
-      "presentation"
+      "Hackathon",
+      "Web"
     ],
-    "language": "TeX",
-    "homepage": "",
-    "html_url": "https://github.com/pm25/SimplePlus-BeamerTheme",
-    "created_at": "2021-12-14T08:33:39Z",
-    "updated_at": "2025-11-26T16:09:45Z",
-    "pushed_at": "2025-01-12T22:50:46Z",
-    "displayName": "SimplePlus Beamer Theme",
-    "previewImage": "https://raw.githubusercontent.com/pm25/simpleplus-beamerTheme/master/preview/slide-1.webp",
-    "featured": true
-  },
-  "SimpleDarkBlue-BeamerTheme": {
-    "name": "SimpleDarkBlue-BeamerTheme",
-    "description": "🫐 SimpleDarkBlue - A simple and clear LaTeX Beamer theme",
-    "stargazers_count": 88,
-    "topics": [
-      "beamer-template",
-      "beamer-theme",
-      "latex",
-      "latex-template",
-      "presentation"
-    ],
-    "language": "TeX",
-    "homepage": "",
-    "html_url": "https://github.com/pm25/SimpleDarkBlue-BeamerTheme",
-    "created_at": "2021-01-12T00:59:09Z",
-    "updated_at": "2025-11-18T16:42:14Z",
-    "pushed_at": "2025-01-14T08:50:14Z",
-    "displayName": "SimpleDarkBlue Beamer Theme",
-    "previewImage": "https://raw.githubusercontent.com/pm25/simpledarkblue-beamertheme/master/preview/slide-1.webp",
-    "featured": true
-  },
-  "flappy-bird": {
-    "name": "flappy-bird",
-    "description": "🐤 Flappy Bird clone, developed with JavaScript.",
-    "stargazers_count": 2,
-    "topics": ["game", "javascript", "website"],
     "language": "JavaScript",
-    "homepage": "https://pm25.github.io/Flappy-Bird/",
-    "html_url": "https://github.com/pm25/flappy-bird",
-    "created_at": "2020-05-19T03:41:18Z",
-    "updated_at": "2025-11-25T15:44:47Z",
-    "pushed_at": "2022-09-10T06:40:04Z",
-    "displayName": "Flappy Bird",
+    "homepage": null,
+    "html_url": "https://github.com/arand0musernam3/AUHack26",
+    "created_at": "2026-03-13T16:47:49Z",
+    "updated_at": "2026-09-03T11:46:54Z",
+    "pushed_at": "2026-03-17T11:00:18Z",
+    "displayName": "Energy Market (AUHack 2026)",
+    "previewImage": "/images/projects/energy-market.svg",
+    "featured": false
+  },
+  "network-and-crypto-attacks": {
+    "name": "network-and-crypto-attacks",
+    "description": "Systems Security assignments at Aarhus University: TCP injection and session hijacking with Scapy, RSA signature forgery and ElGamal malleability against web APIs, and Dirty COW privilege escalation.",
+    "stargazers_count": null,
+    "topics": [
+      "Master's",
+      "Security",
+      "Networking",
+      "Cryptography"
+    ],
+    "language": "Python",
+    "homepage": null,
+    "html_url": null,
+    "created_at": "2026-03-01T00:00:00.000Z",
+    "updated_at": "2026-03-01T00:00:00.000Z",
+    "pushed_at": "2026-03-01T00:00:00.000Z",
+    "displayName": "Network and Cryptographic Attacks",
     "previewImage": null,
     "featured": false
   },
-  "pm25.github.io": {
-    "name": "pm25.github.io",
-    "description": "✨ PlusMore - My personal website",
-    "stargazers_count": 4,
+  "verified-hoare-logic": {
+    "name": "verified-hoare-logic",
+    "description": "Formal Software Verification project at Aarhus University: program equivalence (including non-determinism), constant-folding soundness and Hoare logic for the Imp language, with soundness and completeness proved in the Rocq proof assistant.",
+    "stargazers_count": null,
     "topics": [
-      "personal-website",
-      "react",
-      "shadcn-ui",
-      "tailwindcss",
-      "typescript",
-      "vite"
+      "Master's",
+      "Formal methods"
     ],
-    "language": "TypeScript",
-    "homepage": "https://pm25.github.io/",
-    "html_url": "https://github.com/pm25/pm25.github.io",
-    "created_at": "2018-05-24T14:51:50Z",
-    "updated_at": "2025-11-18T16:42:40Z",
-    "pushed_at": "2025-11-21T19:49:37Z",
-    "displayName": "pm25.github.io",
+    "language": "Rocq",
+    "homepage": null,
+    "html_url": null,
+    "created_at": "2025-12-01T00:00:00.000Z",
+    "updated_at": "2025-12-01T00:00:00.000Z",
+    "pushed_at": "2025-12-01T00:00:00.000Z",
+    "displayName": "Verified Program Equivalence and Hoare Logic",
     "previewImage": null,
-    "featured": true
+    "featured": false
+  },
+  "Python-Quantum-Circuit-Simulator": {
+    "name": "Python-Quantum-Circuit-Simulator",
+    "description": "A state-vector quantum circuit simulator in Python, with single-, two- and three-qubit gates, repeated measurements with statistics, and a small circuit file format.",
+    "stargazers_count": 0,
+    "topics": [
+      "Master's",
+      "Quantum"
+    ],
+    "language": "Python",
+    "homepage": null,
+    "html_url": "https://github.com/arand0musernam3/Python-Quantum-Circuit-Simulator",
+    "created_at": "2025-09-12T22:22:15Z",
+    "updated_at": "2025-10-10T15:32:36Z",
+    "pushed_at": "2025-10-10T15:33:15Z",
+    "displayName": "Quantum Circuit Simulator",
+    "previewImage": null,
+    "featured": false
+  },
+  "starviewer-in-the-browser": {
+    "name": "starviewer-in-the-browser",
+    "description": "Bachelor's thesis and research at the Graphics & Imaging Laboratory (University of Girona): a zero-footprint browser version of the Starviewer radiology (DICOM) viewer, compiling its C++/Qt/VTK codebase to WebAssembly; plus Starviewer's auto-update mechanism and an nnU-Net model segmenting vertebrae and intervertebral discs in MRI scans.",
+    "stargazers_count": null,
+    "topics": [
+      "Bachelor's",
+      "WebAssembly",
+      "Medical imaging"
+    ],
+    "language": "C++",
+    "homepage": null,
+    "html_url": null,
+    "created_at": "2025-06-01T00:00:00.000Z",
+    "updated_at": "2025-06-01T00:00:00.000Z",
+    "pushed_at": "2025-06-01T00:00:00.000Z",
+    "displayName": "Starviewer in the Browser (Bachelor's thesis)",
+    "previewImage": null,
+    "featured": false
+  },
+  "GEINF-4t-CSP-SAT": {
+    "name": "GEINF-4t-CSP-SAT",
+    "description": "Declarative-programming project: a calendar scheduling problem modelled in MiniZinc and encoded to SAT in Scala with ScalAT.",
+    "stargazers_count": 0,
+    "topics": [
+      "Bachelor's"
+    ],
+    "language": "Scala",
+    "homepage": null,
+    "html_url": "https://github.com/arand0musernam3/GEINF-4t-CSP-SAT",
+    "created_at": "2024-12-20T10:18:02Z",
+    "updated_at": "2025-01-21T15:18:07Z",
+    "pushed_at": "2025-01-21T15:18:03Z",
+    "displayName": "Timetabling with SAT and Constraint Programming",
+    "previewImage": null,
+    "featured": false
+  },
+  "GEINF-4t-ViquipediaSimil": {
+    "name": "GEINF-4t-ViquipediaSimil",
+    "description": "A MapReduce pipeline in Scala computing document similarity over a Catalan Wikipedia dump.",
+    "stargazers_count": 0,
+    "topics": [
+      "Bachelor's"
+    ],
+    "language": "Scala",
+    "homepage": null,
+    "html_url": "https://github.com/arand0musernam3/GEINF-4t-ViquipediaSimil",
+    "created_at": "2024-11-07T09:51:06Z",
+    "updated_at": "2024-12-24T16:07:29Z",
+    "pushed_at": "2024-12-10T12:04:26Z",
+    "displayName": "Wikipedia Similarity with MapReduce",
+    "previewImage": null,
+    "featured": false
+  },
+  "GEINF-3r-Paradigmes": {
+    "name": "GEINF-3r-Paradigmes",
+    "description": "Programming-paradigms coursework: a propositional-logic project in Haskell and a nonogram solver in Prolog.",
+    "stargazers_count": 0,
+    "topics": [
+      "Bachelor's"
+    ],
+    "language": "Prolog",
+    "homepage": null,
+    "html_url": "https://github.com/arand0musernam3/GEINF-3r-Paradigmes",
+    "created_at": "2024-03-09T14:40:04Z",
+    "updated_at": "2024-12-24T16:07:53Z",
+    "pushed_at": "2024-05-29T20:54:35Z",
+    "displayName": "Functional and Logic Programming",
+    "previewImage": null,
+    "featured": false
+  },
+  "GEINF-3r-AI": {
+    "name": "GEINF-3r-AI",
+    "description": "Artificial-intelligence practicals in Python, including decision trees and an exploratory analysis of a video-game dataset.",
+    "stargazers_count": 0,
+    "topics": [
+      "Bachelor's",
+      "AI"
+    ],
+    "language": "Python",
+    "homepage": null,
+    "html_url": "https://github.com/arand0musernam3/GEINF-3r-AI",
+    "created_at": "2024-03-09T11:10:08Z",
+    "updated_at": "2025-03-16T21:55:55Z",
+    "pushed_at": "2024-04-24T12:50:27Z",
+    "displayName": "Artificial Intelligence Coursework",
+    "previewImage": null,
+    "featured": false
+  },
+  "GEINF-3r-MultiInterf-Hangman": {
+    "name": "GEINF-3r-MultiInterf-Hangman",
+    "description": "A Hangman web game in plain JavaScript, built to match a reference design and be fully playable from the keyboard.",
+    "stargazers_count": 0,
+    "topics": [
+      "Bachelor's",
+      "Web"
+    ],
+    "language": "JavaScript",
+    "homepage": null,
+    "html_url": "https://github.com/arand0musernam3/GEINF-3r-MultiInterf-Hangman",
+    "created_at": "2023-10-17T14:14:42Z",
+    "updated_at": "2023-10-17T17:02:29Z",
+    "pushed_at": "2023-11-13T09:19:53Z",
+    "displayName": "Hangman",
+    "previewImage": null,
+    "featured": false
+  },
+  "GEINF-3r-Xarxes": {
+    "name": "GEINF-3r-Xarxes",
+    "description": "Computer-networks project: client and server for a simple HTTP-like web protocol over TCP sockets in C, with their own DNS-resolution and TCP layers.",
+    "stargazers_count": 0,
+    "topics": [
+      "Bachelor's",
+      "Networking"
+    ],
+    "language": "C",
+    "homepage": null,
+    "html_url": "https://github.com/arand0musernam3/GEINF-3r-Xarxes",
+    "created_at": "2023-09-28T16:22:30Z",
+    "updated_at": "2023-11-14T09:10:41Z",
+    "pushed_at": "2024-02-18T09:52:06Z",
+    "displayName": "Web Client and Server in C",
+    "previewImage": null,
+    "featured": false
+  },
+  "GEINF-3r-EDS2-KairoMart": {
+    "name": "GEINF-3r-EDS2-KairoMart",
+    "description": "Software-design project: the architecture of a kart-racing game in Java, using the Strategy, Decorator and Singleton patterns.",
+    "stargazers_count": 0,
+    "topics": [
+      "Bachelor's"
+    ],
+    "language": "Java",
+    "homepage": null,
+    "html_url": "https://github.com/arand0musernam3/GEINF-3r-EDS2-KairoMart",
+    "created_at": "2023-09-26T14:53:10Z",
+    "updated_at": "2023-12-19T16:25:58Z",
+    "pushed_at": "2024-01-15T13:05:39Z",
+    "displayName": "KairoMart",
+    "previewImage": null,
+    "featured": false
+  },
+  "Arduino-SIM900-automatic-calling": {
+    "name": "Arduino-SIM900-automatic-calling",
+    "description": "An Arduino with a SIM900 GSM module that calls three phone numbers when a normally closed switch opens.",
+    "stargazers_count": 0,
+    "topics": [
+      "Hardware"
+    ],
+    "language": "C++",
+    "homepage": null,
+    "html_url": "https://github.com/arand0musernam3/Arduino-SIM900-automatic-calling",
+    "created_at": "2023-03-03T17:13:33Z",
+    "updated_at": "2023-03-03T17:15:05Z",
+    "pushed_at": "2023-03-03T17:15:02Z",
+    "displayName": "Arduino GSM Alarm Caller",
+    "previewImage": null,
+    "featured": false
   }
 }

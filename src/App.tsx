@@ -7,8 +7,6 @@ import { ScrollToTop } from "@/hooks/scroll-to-top";
 import { useGlobalMeta } from "./hooks/use-global-meta";
 
 const HomePage = loadLazy(() => import("@/pages/home"));
-const MoviesPage = loadLazy(() => import("@/pages/movies"));
-const MusicPage = loadLazy(() => import("@/pages/music"));
 const ProjectsPage = loadLazy(() => import("@/pages/projects"));
 const PublicationsPage = loadLazy(() => import("@/pages/publications"));
 const ArticlesPage = loadLazy(() => import("@/pages/articles"));
@@ -25,8 +23,8 @@ export default function App() {
         <Routes>
           <Route path="/" element={<Layout />}>
             <Route index element={<HomePage />} />
-            <Route path="movies" element={<MoviesPage />} />
-            <Route path="music" element={<MusicPage />} />
+            {/* Movies and Music pages are disabled. To re-enable, restore their
+                routes and lazy imports from git and add them back to config/sidebar.yaml. */}
             <Route path="projects" element={<ProjectsPage />} />
             <Route path="publications" element={<PublicationsPage />} />
             <Route path="articles" element={<ArticlesPage />} />

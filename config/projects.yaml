@@ -8,44 +8,150 @@
 #
 # ✔ The `displayName` field controls how the project name appears on the website.
 #
+# ✔ Any other field (`description`, `topics`, ...) overrides what GitHub returns.
+#
+# ✔ Projects without a public repository: set `github: false` and give them a
+#    unique `id`, a `date` (YYYY-MM), `description`, `topics` and `language`.
+#    Optional: `link` (shown as the globe icon).
+#
 # ✔ Use the `featured` field to control which projects appear on the homepage.
 #    - featured: true  → shown on the homepage
 #    - featured: false → shown only on the Projects page
+#
+# Keep in sync with the PROJECTS section of the CV (../cv/cv.typ).
 # =====================================================
 
 projects:
   items:
-    - id: "example-project" # name of your GitHub repository (from: github.com/<your-username>/<repo-name>)
-      displayName: "[Project Name]" # name that will be displayed on the website
-      previewImage: https://upload.wikimedia.org/wikipedia/commons/8/8f/Example_image.svg
+    # ---------- M.Sc. Computer Science, Aarhus University ----------
+
+    - id: "secure-computation-pq-signatures"
+      github: false
+      displayName: "Secure Computation and Post-Quantum Signatures"
+      date: "2026-09"
+      language: "Go"
+      topics: ["Master's", "Cryptography", "MPC", "Post-quantum"]
+      description: "Cryptographic Computing and Advanced Topics in Cybersecurity at Aarhus University: MPC protocols implemented in Go (oblivious transfer, fully homomorphic encryption, garbled circuits) for a private blood-type compatibility check, and an ongoing threshold-signatures and ML-DSA project."
+      previewImage: "/images/projects/secure-computation.svg"
       featured: true
 
-    - id: "showlit"
-      displayName: "Showlit"
-      previewImage: https://pm25.github.io/showlit/images/full_logo.png
+    - id: "car-sharing-app-security-analysis"
+      github: false
+      displayName: "Security Analysis of a Car-Sharing Android App"
+      date: "2026-05"
+      language: "Android"
+      topics: ["Master's", "Security", "Mobile"]
+      description: "Systems Security team project at Aarhus University: intercepted TLS on a rooted Android emulator with mitmproxy, decompiled and repackaged the APK, and hooked it at runtime with Frida. Found leaking and never-revoked session tokens, user enumeration, plaintext at-rest keys and trackers loaded before consent, each mapped to an adversary. The full report is available on request; feel free to reach out."
+      previewImage: "/images/projects/car-sharing-audit.svg"
       featured: true
 
-    - id: "Semi-Supervised-Regression"
-      displayName: "Semi-Supervised Regression"
-      previewImage: https://pm25.github.io/research-figures/rankup/figures/rankup-illustration.png
+    - id: "imp-vsi-flow-security"
+      displayName: "Static vs Dynamic Information-Flow Control"
+      topics: ["Master's", "Security", "Formal methods"]
+      description: "Language-Based Security project at Aarhus University: noninterference and erasure enforced on a simple imperative language, statically with a security type system and dynamically with runtime monitors."
+      previewImage: "/images/projects/ifc-code.svg"
       featured: true
 
-    - id: "SimplePlus-BeamerTheme"
-      displayName: "SimplePlus Beamer Theme"
-      previewImage: https://raw.githubusercontent.com/pm25/simpleplus-beamerTheme/master/preview/slide-1.webp
-      featured: true
-
-    - id: "SimpleDarkBlue-BeamerTheme"
-      displayName: "SimpleDarkBlue Beamer Theme"
-      previewImage: https://raw.githubusercontent.com/pm25/simpledarkblue-beamertheme/master/preview/slide-1.webp
-      featured: true
-
-    - id: "pm25.github.io"
-      displayName: "pm25.github.io"
+    - id: "network-and-crypto-attacks"
+      github: false
+      displayName: "Network and Cryptographic Attacks"
+      date: "2026-03"
+      language: "Python"
+      topics: ["Master's", "Security", "Networking", "Cryptography"]
+      description: "Systems Security assignments at Aarhus University: TCP injection and session hijacking with Scapy, RSA signature forgery and ElGamal malleability against web APIs, and Dirty COW privilege escalation."
       previewImage: null
-      featured: true
+      featured: false
 
-    - id: "flappy-bird"
-      displayName: "Flappy Bird"
+    - id: "verified-hoare-logic"
+      github: false
+      displayName: "Verified Program Equivalence and Hoare Logic"
+      date: "2025-12"
+      language: "Rocq"
+      topics: ["Master's", "Formal methods"]
+      description: "Formal Software Verification project at Aarhus University: program equivalence (including non-determinism), constant-folding soundness and Hoare logic for the Imp language, with soundness and completeness proved in the Rocq proof assistant."
+      previewImage: null
+      featured: false
+
+    - id: "Python-Quantum-Circuit-Simulator"
+      displayName: "Quantum Circuit Simulator"
+      topics: ["Master's", "Quantum"]
+      description: "A state-vector quantum circuit simulator in Python, with single-, two- and three-qubit gates, repeated measurements with statistics, and a small circuit file format."
+      previewImage: null
+      featured: false
+
+    - id: "AUHack26"
+      displayName: "Energy Market (AUHack 2026)"
+      topics: ["Hackathon", "Web"]
+      description: "Hackathon project at AUHack 2026: a multiplayer strategy game where grid operators bid for energy contracts and speculate on the weather."
+      previewImage: "/images/projects/energy-market.svg"
+      featured: false
+
+    # ---------- B.Sc. Computer Engineering, University of Girona ----------
+
+    - id: "starviewer-in-the-browser"
+      github: false
+      displayName: "Starviewer in the Browser (Bachelor's thesis)"
+      date: "2025-06"
+      language: "C++"
+      topics: ["Bachelor's", "WebAssembly", "Medical imaging"]
+      description: "Bachelor's thesis and research at the Graphics & Imaging Laboratory (University of Girona): a zero-footprint browser version of the Starviewer radiology (DICOM) viewer, compiling its C++/Qt/VTK codebase to WebAssembly; plus Starviewer's auto-update mechanism and an nnU-Net model segmenting vertebrae and intervertebral discs in MRI scans."
+      previewImage: null
+      featured: false
+
+    - id: "GEINF-4t-CSP-SAT"
+      displayName: "Timetabling with SAT and Constraint Programming"
+      topics: ["Bachelor's"]
+      description: "Declarative-programming project: a calendar scheduling problem modelled in MiniZinc and encoded to SAT in Scala with ScalAT."
+      previewImage: null
+      featured: false
+
+    - id: "GEINF-4t-ViquipediaSimil"
+      displayName: "Wikipedia Similarity with MapReduce"
+      topics: ["Bachelor's"]
+      description: "A MapReduce pipeline in Scala computing document similarity over a Catalan Wikipedia dump."
+      previewImage: null
+      featured: false
+
+    - id: "GEINF-3r-AI"
+      displayName: "Artificial Intelligence Coursework"
+      topics: ["Bachelor's", "AI"]
+      description: "Artificial-intelligence practicals in Python, including decision trees and an exploratory analysis of a video-game dataset."
+      previewImage: null
+      featured: false
+
+    - id: "GEINF-3r-Paradigmes"
+      displayName: "Functional and Logic Programming"
+      topics: ["Bachelor's"]
+      description: "Programming-paradigms coursework: a propositional-logic project in Haskell and a nonogram solver in Prolog."
+      previewImage: null
+      featured: false
+
+    - id: "GEINF-3r-MultiInterf-Hangman"
+      displayName: "Hangman"
+      topics: ["Bachelor's", "Web"]
+      description: "A Hangman web game in plain JavaScript, built to match a reference design and be fully playable from the keyboard."
+      previewImage: null
+      featured: false
+
+    - id: "GEINF-3r-Xarxes"
+      displayName: "Web Client and Server in C"
+      topics: ["Bachelor's", "Networking"]
+      description: "Computer-networks project: client and server for a simple HTTP-like web protocol over TCP sockets in C, with their own DNS-resolution and TCP layers."
+      previewImage: null
+      featured: false
+
+    - id: "GEINF-3r-EDS2-KairoMart"
+      displayName: "KairoMart"
+      topics: ["Bachelor's"]
+      description: "Software-design project: the architecture of a kart-racing game in Java, using the Strategy, Decorator and Singleton patterns."
+      previewImage: null
+      featured: false
+
+    # ---------- Personal ----------
+
+    - id: "Arduino-SIM900-automatic-calling"
+      displayName: "Arduino GSM Alarm Caller"
+      topics: ["Hardware"]
+      description: "An Arduino with a SIM900 GSM module that calls three phone numbers when a normally closed switch opens."
       previewImage: null
       featured: false

@@ -5,6 +5,7 @@
   "type": "module",
   "scripts": {
     "dev": "vite",
+    "dev:live": "npm-run-all --parallel watch:config dev",
     "build": "tsc -b && vite build",
     "prebuild": "npm run build:site-json && npm-run-all --parallel fetch:repos build:article-index convert:config",
     "build:manual": "tsc -b && vite build",
@@ -26,7 +27,8 @@
     "convert:config:movie": "node scripts/yaml-to-ts.js config/movie.yaml",
     "convert:config:music": "node scripts/yaml-to-ts.js config/music.yaml",
     "convert:config:homepage": "node scripts/yaml-to-ts.js config/homepage.yaml",
-    "convert:config": "npm-run-all convert:config:*"
+    "convert:config": "npm-run-all convert:config:*",
+    "watch:config": "node scripts/watch-config.js"
   },
   "dependencies": {
     "@giscus/react": "^3.1.0",
