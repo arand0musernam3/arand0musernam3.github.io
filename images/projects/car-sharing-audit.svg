@@ -1,0 +1,18 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 600 400" font-family="ui-monospace, 'SF Mono', Menlo, Consolas, 'DejaVu Sans Mono', monospace">
+  <rect width="600" height="400" fill="#0b1220"/>
+  <rect width="600" height="30" fill="#131c2f"/>
+  <circle cx="18" cy="15" r="5.5" fill="#ff5f57"/><circle cx="36" cy="15" r="5.5" fill="#febc2e"/><circle cx="54" cy="15" r="5.5" fill="#28c840"/>
+  <text x="300.0" y="19.5" font-size="12" text-anchor="middle" fill="#5f6f8a">audit — zsh</text>
+<text x="22" y="64" font-size="13" xml:space="preserve" fill="#c9d4e5"><tspan fill="#7ee787">~$ </tspan>audit --target android-app --scope full</text>
+<text x="22" y="103.19999999999999" font-size="13" xml:space="preserve" fill="#c9d4e5"><tspan fill="#5f6f8a">[1/4] </tspan>static analysis     <tspan fill="#7ee787">✓</tspan></text>
+<text x="22" y="131.2" font-size="13" xml:space="preserve" fill="#c9d4e5"><tspan fill="#5f6f8a">[2/4] </tspan>dynamic analysis    <tspan fill="#7ee787">✓</tspan></text>
+<text x="22" y="159.2" font-size="13" xml:space="preserve" fill="#c9d4e5"><tspan fill="#5f6f8a">[3/4] </tspan>network analysis    <tspan fill="#7ee787">✓</tspan></text>
+<text x="22" y="187.20000000000002" font-size="13" xml:space="preserve" fill="#c9d4e5"><tspan fill="#5f6f8a">[4/4] </tspan>privacy review      <tspan fill="#7ee787">✓</tspan></text>
+<text x="22" y="226.4" font-size="13" xml:space="preserve" fill="#c9d4e5"><tspan fill="#79b8ff">[*] </tspan>threat model <tspan fill="#e3b341">STRIDE</tspan></text>
+<text x="22" y="254.4" font-size="13" xml:space="preserve" fill="#c9d4e5"><tspan fill="#79b8ff">[*] </tspan>report <tspan fill="#e3b341">available on request</tspan></text>
+<text x="22" y="293.59999999999997" font-size="13" xml:space="preserve" fill="#c9d4e5"><tspan fill="#7ee787">~$ </tspan><tspan fill="#c9d4e5">█</tspan></text>
+<text x="344" y="126" font-size="18" xml:space="preserve" fill="#c9d4e5"><tspan fill="#79b8ff">       _______</tspan></text>
+<text x="344" y="148" font-size="18" xml:space="preserve" fill="#c9d4e5"><tspan fill="#79b8ff">  ____/   |   \_____</tspan></text>
+<text x="344" y="170" font-size="18" xml:space="preserve" fill="#c9d4e5"><tspan fill="#79b8ff">  |  _          _  |</tspan></text>
+<text x="344" y="192" font-size="18" xml:space="preserve" fill="#c9d4e5"><tspan fill="#79b8ff">  '-(_)--------(_)-'</tspan></text>
+</svg>

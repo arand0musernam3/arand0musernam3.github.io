@@ -1,0 +1,32 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 600 400" font-family="ui-monospace, 'SF Mono', Menlo, Consolas, 'DejaVu Sans Mono', monospace">
+  <rect width="600" height="400" fill="#0b1220"/>
+  <rect width="600" height="30" fill="#131c2f"/>
+  <circle cx="18" cy="15" r="5.5" fill="#ff5f57"/><circle cx="36" cy="15" r="5.5" fill="#febc2e"/><circle cx="54" cy="15" r="5.5" fill="#28c840"/>
+  <text x="300.0" y="19.5" font-size="12" text-anchor="middle" fill="#5f6f8a">energy-market — zsh</text>
+<text x="22" y="58" font-size="13" xml:space="preserve" fill="#c9d4e5"><tspan fill="#7ee787">~$ </tspan>npm start<tspan fill="#5f6f8a">   # AUHack 2026</tspan></text>
+<text x="22" y="86" font-size="13" xml:space="preserve" fill="#c9d4e5"><tspan fill="#79b8ff">[game] </tspan>round 3/8 · 4 grid operators online</text>
+<rect x="22" y="112" width="210" height="95" rx="5" fill="none" stroke="#5f6f8a" stroke-width="1.2"/>
+<line x1="22" y1="138" x2="232" y2="138" stroke="#5f6f8a" stroke-width="1.2"/>
+<line x1="162" y1="112" x2="162" y2="207" stroke="#5f6f8a" stroke-width="1.2"/>
+<text x="34" y="129" font-size="12" fill="#5f6f8a">contract</text>
+<text x="220" y="129" font-size="12" text-anchor="end" fill="#5f6f8a">bid</text>
+<text x="34" y="154" font-size="13" fill="#7ee787">50 MWh solar</text>
+<text x="220" y="154" font-size="13" text-anchor="end" fill="#7ee787">1 200</text>
+<text x="34" y="177" font-size="13" fill="#c9d4e5">30 MWh wind</text>
+<text x="220" y="177" font-size="13" text-anchor="end" fill="#c9d4e5">850</text>
+<text x="34" y="200" font-size="13" fill="#c9d4e5">20 MWh hydro</text>
+<text x="220" y="200" font-size="13" text-anchor="end" fill="#c9d4e5">640</text>
+<circle cx="370" cy="128" r="7" fill="#e3b341"/><g stroke="#e3b341" stroke-width="1.6" stroke-linecap="round"><line x1="380" y1="128" x2="384" y2="128"/><line x1="360" y1="128" x2="356" y2="128"/><line x1="370" y1="138" x2="370" y2="142"/><line x1="370" y1="118" x2="370" y2="114"/><line x1="377.0" y1="135.0" x2="379.8" y2="137.8"/><line x1="363.0" y1="135.0" x2="360.2" y2="137.8"/><line x1="377.0" y1="121.0" x2="379.8" y2="118.2"/><line x1="363.0" y1="121.0" x2="360.2" y2="118.2"/></g><text x="370" y="158" font-size="11" text-anchor="middle" fill="#5f6f8a">Mon</text>
+<circle cx="420" cy="124" r="6" fill="#e3b341"/><g stroke="#e3b341" stroke-width="1.6" stroke-linecap="round"><line x1="429" y1="124" x2="433" y2="124"/><line x1="411" y1="124" x2="407" y2="124"/><line x1="420" y1="133" x2="420" y2="137"/><line x1="420" y1="115" x2="420" y2="111"/><line x1="426.3" y1="130.3" x2="429.1" y2="133.1"/><line x1="413.7" y1="130.3" x2="410.9" y2="133.1"/><line x1="426.3" y1="117.7" x2="429.1" y2="114.9"/><line x1="413.7" y1="117.7" x2="410.9" y2="114.9"/></g><g fill="#c9d4e5"><circle cx="421" cy="134" r="6"/><circle cx="429" cy="129" r="8"/><circle cx="437" cy="134" r="6"/><rect x="415" y="134" width="28" height="6" rx="3"/></g><text x="424" y="158" font-size="11" text-anchor="middle" fill="#5f6f8a">Tue</text>
+<g fill="#c9d4e5"><circle cx="471" cy="130" r="6"/><circle cx="479" cy="125" r="8"/><circle cx="487" cy="130" r="6"/><rect x="465" y="130" width="28" height="6" rx="3"/></g><text x="478" y="158" font-size="11" text-anchor="middle" fill="#5f6f8a">Wed</text>
+<g fill="#8b98ad"><circle cx="525" cy="126" r="6"/><circle cx="533" cy="121" r="8"/><circle cx="541" cy="126" r="6"/><rect x="519" y="126" width="28" height="6" rx="3"/></g><g stroke="#79b8ff" stroke-width="1.6" stroke-linecap="round"><line x1="526" y1="136" x2="523" y2="143"/><line x1="533" y1="136" x2="530" y2="143"/><line x1="540" y1="136" x2="537" y2="143"/></g><text x="532" y="158" font-size="11" text-anchor="middle" fill="#5f6f8a">Thu</text>
+<line x1="352" y1="262" x2="572" y2="262" stroke="#1d2a44" stroke-width="1.2"/>
+<polygon points="352,262 352.0,245.2 383.4,238.5 414.9,243.5 446.3,225.0 477.7,228.4 509.1,206.6 540.6,181.4 572.0,191.4 572,262" fill="#79b8ff" opacity="0.12"/>
+<polyline points="352.0,245.2 383.4,238.5 414.9,243.5 446.3,225.0 477.7,228.4 509.1,206.6 540.6,181.4 572.0,191.4" fill="none" stroke="#79b8ff" stroke-width="2" stroke-linejoin="round"/>
+<circle cx="540.6" cy="181.4" r="4" fill="#e3b341"/>
+<text x="352" y="278" font-size="11" fill="#5f6f8a">price €/MWh</text>
+<text x="572" y="278" font-size="11" text-anchor="end" fill="#e3b341">▲ 18%</text>
+<text x="22" y="308" font-size="13" xml:space="preserve" fill="#c9d4e5"><tspan fill="#7ee787">[bid] </tspan>you: 50 MWh solar @ 1 200</text>
+<text x="22" y="330" font-size="13" xml:space="preserve" fill="#c9d4e5"><tspan fill="#e3b341">[!] </tspan>storm on Thursday · prices rising</text>
+<text x="22" y="358" font-size="13" xml:space="preserve" fill="#c9d4e5"><tspan fill="#7ee787">~$ </tspan><tspan fill="#c9d4e5">█</tspan></text>
+</svg>

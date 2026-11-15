@@ -1,0 +1,1 @@
+import{l as e,o as t,t as n}from"./site-CLg2OdWV.js";var r=e(t(),1);function i(e){(0,r.useEffect)(()=>{document.title=`${e} - ${n.name}`},[e])}export{i as t};
